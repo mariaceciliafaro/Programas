@@ -3,88 +3,311 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Maria Cecilia Faro — contabilidade, planejamento governamental, auditoria e controle interno. Conheça sua formação e trajetória profissional.">
-  <meta name="theme-color" content="#173f42">
-  <title>Maria Cecilia Faro | Currículo</title>
+  <meta name="description" content="Maria Cecilia Faro — landing page profissional em contabilidade, planejamento governamental, auditoria e controle interno.">
+  <meta name="theme-color" content="#0b1120">
+  <title>Maria Cecilia Faro | Gestão pública e controle</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#dados">Ir para o conteúdo</a>
-  <header class="site-header">
-    <a class="brand" href="#inicio" aria-label="Maria Cecilia Faro, início">mcf<span>.</span></a>
-    <span class="header-caption">TRAJETÓRIA & PROPÓSITO</span>
-    <button id="print" class="button button-outline" type="button">Salvar em PDF <span aria-hidden="true">↗</span></button>
-  </header>
-  <main id="inicio">
-    <div class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> CONTABILIDADE · GESTÃO PÚBLICA · DADOS</p>
-        <h1>Maria Cecilia<br><em>Faro.</em></h1>
-        <p class="hero-statement">Visão estratégica.<br>Gestão com responsabilidade.</p>
-        <p class="hero-description">Experiência em contabilidade, planejamento, auditoria e controle interno, conectando capacidade analítica, liderança e melhoria de processos na administração pública e em grandes empresas.</p>
-        <a class="button button-dark" href="#experiencia">Conheça minha trajetória <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="hero-art">
-        <span class="orbit orbit-one" aria-hidden="true"></span><span class="orbit orbit-two" aria-hidden="true"></span>
-        <span class="decorative-star" aria-hidden="true">✳</span>
-        <figure class="portrait-card">
-          <div class="portrait-frame"><img id="portrait" src="assets/maria-cecilia.jpg" alt="Maria Cecilia Faro" width="585" height="718"></div>
-          <figcaption><span>Maria Cecilia Faro</span><small>Macapá, Amapá · Brasil</small></figcaption>
-        </figure>
-        <span class="floating-label"><span aria-hidden="true">↗</span> Estratégia que<br><strong>vira ação.</strong></span>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="lp-header" id="topo">
+    <div class="lp-header__inner">
+      <a class="brand" href="#inicio">mcf<span>.</span></a>
+      <nav class="lp-nav" id="menu-principal" aria-label="Seções da página">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#atuacao">Atuação</a>
+        <a href="#educacao">Educação</a>
+        <a href="#experiencia">Experiência</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="lp-header__actions">
+        <button id="print" class="button button-ghost" type="button">Salvar PDF</button>
+        <a class="button button-primary" href="#contato">Vamos conversar</a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+          <span class="sr-only">Abrir menu</span>
+          <span></span><span></span><span></span>
+        </button>
       </div>
     </div>
-    <div class="expertise-strip" aria-label="Áreas de atuação"><span>Planejamento</span><i aria-hidden="true">✳</i><span>Controle interno</span><i aria-hidden="true">✳</i><span>Auditoria</span><i aria-hidden="true">✳</i><span>Business Intelligence</span></div>
-    <nav class="section-nav" aria-label="Seções do currículo"><a href="#dados"><span>01</span> Dados pessoais</a><a href="#educacao"><span>02</span> Educação</a><a href="#experiencia"><span>03</span> Experiência</a></nav>
+  </header>
 
-    <section id="dados" class="section" aria-labelledby="dados-title">
-      <div class="section-heading"><p class="eyebrow">01 / SOBRE MIM</p><h2 id="dados-title">Dados pessoais<span>.</span></h2><p>Perfil analítico, liderança de equipes e foco em governança e resultados.</p></div>
-      <div class="personal-layout">
-        <div class="contact-card">
-          <p class="card-kicker">VAMOS CONVERSAR</p>
-          <h3>Maria Cecilia<br>Soares da Costa Faro</h3>
-          <a class="contact-link" href="mailto:mariaceciliafaro@gmail.com.br"><span>E-mail</span>mariaceciliafaro@gmail.com.br ↗</a>
-          <a class="contact-link" href="tel:+5596981428111"><span>Telefone</span>(96) 98142-8111 ↗</a>
-          <div class="contact-link"><span>Endereço</span>Alameda Campina, 325 — Murici<br>Macapá / AP</div>
-          <p class="personal-meta">Brasileira <span>·</span> Casada <span>·</span> 54 anos no currículo de 2025</p>
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero__copy">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> Contabilidade · Gestão pública · Dados</p>
+        <h1 id="hero-title">Estratégia que vira governança<span>.</span></h1>
+        <p class="hero__lead">Maria Cecilia Faro conecta planejamento, auditoria e controle interno para transformar responsabilidade pública em resultado.</p>
+        <p class="hero__text">Experiência em administração pública e em grandes empresas, com liderança de equipes, análise de dados e melhoria de processos.</p>
+        <div class="hero__cta">
+          <a class="button button-primary" href="#experiencia">Ver trajetória</a>
+          <a class="button button-ghost" href="mailto:mariaceciliafaro@gmail.com.br">Enviar e-mail</a>
         </div>
-        <div class="profile-details">
-          <h3>Onde concentro minha atuação</h3>
-          <div class="tags"><span>Planejamento governamental</span><span>Controle interno</span><span>Auditoria</span><span>Orçamento público</span><span>Análise de dados</span><span>Indicadores de desempenho</span><span>Business Intelligence</span></div>
-          <div class="languages"><h3>Conexões além das fronteiras</h3><div class="language-row"><strong>Inglês</strong><span>Fluente</span></div><p>Vivência de 4 anos em Edimburgo e 1 ano em Israel.</p><div class="language-row"><strong>Espanhol</strong><span>Intermediário</span></div></div>
-          <div class="achievement"><span aria-hidden="true">↗</span><p><strong>Aprovações em concursos públicos</strong><br>TRF1 · 22º lugar &nbsp; / &nbsp; ALAP · 20º lugar</p></div>
+      </div>
+      <div class="hero__art">
+        <figure class="portrait-card">
+          <div class="portrait-frame">
+            <img id="portrait" src="assets/maria-cecilia.jpg" alt="Maria Cecilia Faro" width="585" height="718">
+          </div>
+          <figcaption>
+            <strong>Maria Cecilia Faro</strong>
+            <small>Macapá, Amapá · Brasil</small>
+          </figcaption>
+        </figure>
+        <p class="hero__badge" aria-hidden="true">↗ Resultado com responsabilidade</p>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Indicadores da trajetória">
+      <div class="stats__item"><strong>12 anos</strong><span>IBM Brasil e América Latina</span></div>
+      <div class="stats__item"><strong>2 concursos</strong><span>TRF1 22º · ALAP 20º</span></div>
+      <div class="stats__item"><strong>Inglês fluente</strong><span>Edimburgo e Israel</span></div>
+      <div class="stats__item"><strong>Setor público</strong><span>Controle, planejamento e ZEE</span></div>
+    </section>
+
+    <section class="section" id="sobre" aria-labelledby="sobre-title">
+      <div class="section-heading">
+        <p class="eyebrow">01 / Sobre</p>
+        <h2 id="sobre-title">Perfil analítico, liderança e foco em governança<span>.</span></h2>
+        <p>Uma trajetória que une finanças corporativas, auditoria e o desafio estratégico do Estado.</p>
+      </div>
+      <div class="about-grid">
+        <article class="contact-card">
+          <p class="card-kicker">Perfil</p>
+          <h3>Maria Cecilia Soares da Costa Faro</h3>
+          <p class="personal-meta">Brasileira · Casada · 54 anos no currículo de 2025</p>
+          <p class="card-note">Alameda Campina, 325 — Murici, Macapá / AP</p>
+        </article>
+        <div>
+          <h3 class="block-title">Onde concentro minha atuação</h3>
+          <div class="tags">
+            <span>Planejamento governamental</span>
+            <span>Controle interno</span>
+            <span>Auditoria</span>
+            <span>Orçamento público</span>
+            <span>Análise de dados</span>
+            <span>Indicadores de desempenho</span>
+            <span>Business Intelligence</span>
+          </div>
+          <div class="languages">
+            <h3 class="block-title">Idiomas</h3>
+            <div class="language-row"><strong>Inglês</strong><span>Fluente</span></div>
+            <p>Vivência de 4 anos em Edimburgo e 1 ano em Israel.</p>
+            <div class="language-row"><strong>Espanhol</strong><span>Intermediário</span></div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="educacao" class="section education-section" aria-labelledby="educacao-title">
-      <div class="section-heading"><p class="eyebrow">02 / APRENDIZADO CONTÍNUO</p><h2 id="educacao-title">Educação<span>.</span></h2><p>Uma base multidisciplinar para conectar finanças, estratégia e gestão.</p></div>
+    <section class="section section--alt" id="atuacao" aria-labelledby="atuacao-title">
+      <div class="section-heading">
+        <p class="eyebrow">02 / Atuação</p>
+        <h2 id="atuacao-title">Como posso contribuir<span>.</span></h2>
+        <p>Capacidade analítica, liderança de equipes e melhoria de processos na administração pública e em grandes empresas.</p>
+      </div>
+      <div class="value-grid">
+        <article class="value-card">
+          <p class="card-kicker">Planejamento</p>
+          <h3>Programas estratégicos</h3>
+          <p>Monitoramento de projetos, realinhamento do planejamento e implantação de instrumentos como o Zoneamento Ecológico-Econômico.</p>
+        </article>
+        <article class="value-card">
+          <p class="card-kicker">Controle</p>
+          <h3>Governança e conformidade</h3>
+          <p>Sistemas de controle interno, legalidade de contratos, execução orçamentária e relatórios para a alta administração.</p>
+        </article>
+        <article class="value-card">
+          <p class="card-kicker">Auditoria</p>
+          <h3>Risco e prestação de contas</h3>
+          <p>Auditorias, análise de contas, avaliação de riscos e suporte a processos de reconhecimento de dívidas.</p>
+        </article>
+        <article class="value-card">
+          <p class="card-kicker">Dados</p>
+          <h3>Inteligência para decidir</h3>
+          <p>Power BI, Looker Studio, AppSheet e Excel avançado para indicadores, monitoramento e IA aplicada ao setor público.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="educacao" aria-labelledby="educacao-title">
+      <div class="section-heading">
+        <p class="eyebrow">03 / Aprendizado contínuo</p>
+        <h2 id="educacao-title">Educação<span>.</span></h2>
+        <p>Uma base multidisciplinar para conectar finanças, estratégia e gestão.</p>
+      </div>
       <div class="education-grid">
-        <article class="education-card featured"><div class="card-top"><span>MESTRADO</span><span>2007</span></div><h3>Administração</h3><p class="institution">IBMEC · Rio de Janeiro</p><p class="card-description">Dissertação: “Contabilidade Gerencial — Análise Bibliométrica de 1997 a 2007”.</p><span class="card-symbol" aria-hidden="true">↗</span></article>
-        <article class="education-card"><div class="card-top"><span>ESPECIALIZAÇÃO</span><span>2004</span></div><h3>Gerência de Projetos</h3><p class="institution">Fundação Getúlio Vargas · Rio de Janeiro</p><span class="card-symbol" aria-hidden="true">↗</span></article>
-        <article class="education-card"><div class="card-top"><span>BACHARELADO</span><span>1999</span></div><h3>Ciências Contábeis</h3><p class="institution">Universidade da Cidade · Rio de Janeiro</p><span class="card-symbol" aria-hidden="true">↗</span></article>
-        <article class="education-card"><div class="card-top"><span>BACHARELADO</span><span>1996</span></div><h3>Administração e Finanças</h3><p class="institution">UERJ · Rio de Janeiro</p><span class="card-symbol" aria-hidden="true">↗</span></article>
+        <article class="education-card featured">
+          <div class="card-top"><span>Mestrado</span><span>2007</span></div>
+          <h3>Administração</h3>
+          <p class="institution">IBMEC · Rio de Janeiro</p>
+          <p class="card-description">Dissertação: “Contabilidade Gerencial — Análise Bibliométrica de 1997 a 2007”.</p>
+        </article>
+        <article class="education-card">
+          <div class="card-top"><span>Especialização</span><span>2004</span></div>
+          <h3>Gerência de Projetos</h3>
+          <p class="institution">Fundação Getúlio Vargas · Rio de Janeiro</p>
+        </article>
+        <article class="education-card">
+          <div class="card-top"><span>Bacharelado</span><span>1999</span></div>
+          <h3>Ciências Contábeis</h3>
+          <p class="institution">Universidade da Cidade · Rio de Janeiro</p>
+        </article>
+        <article class="education-card">
+          <div class="card-top"><span>Bacharelado</span><span>1996</span></div>
+          <h3>Administração e Finanças</h3>
+          <p class="institution">UERJ · Rio de Janeiro</p>
+        </article>
       </div>
-      <div class="qualifications"><div><p class="eyebrow">REPERTÓRIO EM EXPANSÃO</p><h3>Tecnologia a serviço<br>da gestão.</h3><div class="tags"><span>Power BI</span><span>Looker Studio</span><span>AppSheet</span><span>Excel avançado</span><span>Google Planilhas avançado</span><span>IA aplicada ao setor público</span></div><p class="qualification-note">Conhecimento em QMF, contas a pagar e receber, contratos e precificação.</p></div>
-      <div class="courses"><h3>Certificações e qualificações</h3><ul><li><span>Auditoria Operacional</span><strong>60h</strong></li><li><span>Auditoria Baseada em Risco</span><strong>20h</strong></li><li><span>Controle Interno na Administração Pública</span><strong>21h</strong></li><li><span>Gestão e Fiscalização de Contratos Administrativos</span><strong>40h</strong></li><li><span>Monitoramento e Avaliação de Políticas Públicas</span><strong>40h</strong></li><li><span>Gestão de Riscos no Setor Público</span><strong>20h</strong></li><li><span>Normas Internacionais de Auditoria Financeira</span><strong>40h</strong></li></ul></div></div>
+      <div class="qualifications">
+        <div>
+          <p class="eyebrow">Repertório em expansão</p>
+          <h3>Tecnologia a serviço da gestão.</h3>
+          <div class="tags">
+            <span>Power BI</span>
+            <span>Looker Studio</span>
+            <span>AppSheet</span>
+            <span>Excel avançado</span>
+            <span>Google Planilhas avançado</span>
+            <span>IA aplicada ao setor público</span>
+          </div>
+          <p class="qualification-note">Conhecimento em QMF, contas a pagar e receber, contratos e precificação.</p>
+        </div>
+        <div class="courses">
+          <h3>Certificações e qualificações</h3>
+          <ul>
+            <li><span>Auditoria Operacional</span><strong>60h</strong></li>
+            <li><span>Auditoria Baseada em Risco</span><strong>20h</strong></li>
+            <li><span>Controle Interno na Administração Pública</span><strong>21h</strong></li>
+            <li><span>Gestão e Fiscalização de Contratos Administrativos</span><strong>40h</strong></li>
+            <li><span>Monitoramento e Avaliação de Políticas Públicas</span><strong>40h</strong></li>
+            <li><span>Gestão de Riscos no Setor Público</span><strong>20h</strong></li>
+            <li><span>Normas Internacionais de Auditoria Financeira</span><strong>40h</strong></li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section id="experiencia" class="section" aria-labelledby="experiencia-title">
-      <div class="section-heading"><p class="eyebrow">03 / CAMINHO PROFISSIONAL</p><h2 id="experiencia-title">Experiência<span>.</span></h2><p>Da atuação internacional em finanças aos desafios estratégicos do setor público.</p></div>
+    <section class="section section--alt" id="experiencia" aria-labelledby="experiencia-title">
+      <div class="section-heading">
+        <p class="eyebrow">04 / Caminho profissional</p>
+        <h2 id="experiencia-title">Experiência<span>.</span></h2>
+        <p>Da atuação internacional em finanças aos desafios estratégicos do setor público.</p>
+      </div>
       <p class="source-note">Os vínculos indicados como atuais refletem o currículo de 2025.</p>
       <div class="timeline">
-        <article class="career-entry"><div class="career-date"><span class="status-dot"></span>Atual no CV de 2025</div><div class="career-content"><p class="organization">ARSAP <span>· Agência Reguladora de Serviços Públicos Delegados do Amapá</span></p><h3>Controladora Interna</h3><ul><li>Implementação e monitoramento do sistema de controle interno da agência.</li><li>Análise de conformidade de processos administrativos e financeiros, execução orçamentária e legalidade dos contratos.</li><li>Emissão de relatórios técnicos para a diretoria colegiada e apoio à governança, com foco na prevenção de riscos e irregularidades.</li></ul><div class="mini-tags"><span>Governança</span><span>Controle interno</span></div></div></article>
-        <article class="career-entry"><div class="career-date"><span class="status-dot"></span>Atual no CV de 2025</div><div class="career-content"><p class="organization">SEPLAN <span>· Secretaria de Planejamento do Estado do Amapá</span></p><h3>Coordenadora Geral de Programas Estratégicos</h3><ul><li>Coordenação do monitoramento de projetos e programas estratégicos.</li><li>Membro da Comissão de Realinhamento do Planejamento Estratégico.</li><li>Responsável pela fase final de implantação do Zoneamento Ecológico-Econômico (ZEE).</li></ul><div class="mini-tags"><span>Planejamento</span><span>Programas estratégicos</span></div></div></article>
-        <article class="career-entry"><div class="career-date">Período não informado</div><div class="career-content"><p class="organization">ESAP <span>· Escola de Administração Pública do Amapá</span></p><h3>Facilitadora</h3><p>Instrutora nos temas de planejamento, prestação de contas e indicadores.</p></div></article>
-        <article class="career-entry"><div class="career-date">abr. 2022 — abr. 2023</div><div class="career-content"><p class="organization">SEMA <span>· Secretaria do Meio Ambiente do Amapá</span></p><h3>Assessora Técnica</h3><ul><li>Apoio técnico ao Secretário nas áreas de finanças, planejamento e contratos.</li><li>Responsável pelo saneamento das contas dos fundos ambientais.</li></ul></div></article>
-        <article class="career-entry"><div class="career-date">abr. 2020 — abr. 2022</div><div class="career-content"><p class="organization">CGE <span>· Controladoria Geral do Estado do Amapá</span></p><h3>Controladora Adjunta</h3><ul><li>Condução de auditorias, análises de prestação de contas e relatórios de gestão.</li><li>Apoio técnico em processos de reconhecimento de dívidas e avaliação de riscos.</li></ul></div></article>
-        <article class="career-entry"><div class="career-date">2012 — 2013</div><div class="career-content"><p class="organization">AMCEL</p><h3>Coordenadora de Contabilidade</h3><p>Liderança do departamento contábil, elaboração de relatórios financeiros e atendimento a auditorias externas.</p><div class="result-note"><strong>10 analistas</strong><span>na equipe coordenada</span></div></div></article>
-        <article class="career-entry"><div class="career-date">2000 — 2012</div><div class="career-content"><p class="organization">IBM Brasil</p><h3>Contadora Chefe América Latina e funções executivas</h3><ul><li>Liderança de equipes no Brasil e na América Latina em contabilidade, incentivos e comissões.</li><li>Implementação de processos contábeis internacionais.</li><li>Suporte técnico a projetos financeiros e contábeis.</li></ul><div class="mini-tags"><span>Liderança internacional</span><span>Finanças</span></div></div></article>
-        <article class="career-entry"><div class="career-date">Período não informado</div><div class="career-content"><p class="organization">Arthur Andersen e Coopers & Lybrand</p><h3>Auditoria de empresas e processos especiais</h3><ul><li>Levantamento de processos e controles internos para avaliação de riscos.</li><li>Atuação em privatizações e due diligence, incluindo Vale do Rio Doce, Eletrobras e Rede Ferroviária Federal.</li><li>Auditoria externa de demonstrações contábeis de SmithKline Beecham, Fiat Lux, Banco Fonte Cindam e Ipiranga, com contato direto com sócios e diretores.</li></ul></div></article>
+        <article class="career-entry">
+          <div class="career-date"><span class="status-dot"></span>Atual no CV de 2025</div>
+          <div class="career-content">
+            <p class="organization">ARSAP <span>· Agência Reguladora de Serviços Públicos Delegados do Amapá</span></p>
+            <h3>Controladora Interna</h3>
+            <ul>
+              <li>Implementação e monitoramento do sistema de controle interno da agência.</li>
+              <li>Análise de conformidade de processos administrativos e financeiros, execução orçamentária e legalidade dos contratos.</li>
+              <li>Emissão de relatórios técnicos para a diretoria colegiada e apoio à governança, com foco na prevenção de riscos e irregularidades.</li>
+            </ul>
+            <div class="mini-tags"><span>Governança</span><span>Controle interno</span></div>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date"><span class="status-dot"></span>Atual no CV de 2025</div>
+          <div class="career-content">
+            <p class="organization">SEPLAN <span>· Secretaria de Planejamento do Estado do Amapá</span></p>
+            <h3>Coordenadora Geral de Programas Estratégicos</h3>
+            <ul>
+              <li>Coordenação do monitoramento de projetos e programas estratégicos.</li>
+              <li>Membro da Comissão de Realinhamento do Planejamento Estratégico.</li>
+              <li>Responsável pela fase final de implantação do Zoneamento Ecológico-Econômico (ZEE).</li>
+            </ul>
+            <div class="mini-tags"><span>Planejamento</span><span>Programas estratégicos</span></div>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date">Período não informado</div>
+          <div class="career-content">
+            <p class="organization">ESAP <span>· Escola de Administração Pública do Amapá</span></p>
+            <h3>Facilitadora</h3>
+            <p>Instrutora nos temas de planejamento, prestação de contas e indicadores.</p>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date">abr. 2022 — abr. 2023</div>
+          <div class="career-content">
+            <p class="organization">SEMA <span>· Secretaria do Meio Ambiente do Amapá</span></p>
+            <h3>Assessora Técnica</h3>
+            <ul>
+              <li>Apoio técnico ao Secretário nas áreas de finanças, planejamento e contratos.</li>
+              <li>Responsável pelo saneamento das contas dos fundos ambientais.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date">abr. 2020 — abr. 2022</div>
+          <div class="career-content">
+            <p class="organization">CGE <span>· Controladoria Geral do Estado do Amapá</span></p>
+            <h3>Controladora Adjunta</h3>
+            <ul>
+              <li>Condução de auditorias, análises de prestação de contas e relatórios de gestão.</li>
+              <li>Apoio técnico em processos de reconhecimento de dívidas e avaliação de riscos.</li>
+            </ul>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date">2012 — 2013</div>
+          <div class="career-content">
+            <p class="organization">AMCEL</p>
+            <h3>Coordenadora de Contabilidade</h3>
+            <p>Liderança do departamento contábil, elaboração de relatórios financeiros e atendimento a auditorias externas.</p>
+            <div class="result-note"><strong>10 analistas</strong><span>na equipe coordenada</span></div>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date">2000 — 2012</div>
+          <div class="career-content">
+            <p class="organization">IBM Brasil</p>
+            <h3>Contadora Chefe América Latina e funções executivas</h3>
+            <ul>
+              <li>Liderança de equipes no Brasil e na América Latina em contabilidade, incentivos e comissões.</li>
+              <li>Implementação de processos contábeis internacionais.</li>
+              <li>Suporte técnico a projetos financeiros e contábeis.</li>
+            </ul>
+            <div class="mini-tags"><span>Liderança internacional</span><span>Finanças</span></div>
+          </div>
+        </article>
+        <article class="career-entry">
+          <div class="career-date">Período não informado</div>
+          <div class="career-content">
+            <p class="organization">Arthur Andersen e Coopers &amp; Lybrand</p>
+            <h3>Auditoria de empresas e processos especiais</h3>
+            <ul>
+              <li>Levantamento de processos e controles internos para avaliação de riscos.</li>
+              <li>Atuação em privatizações e due diligence, incluindo Vale do Rio Doce, Eletrobras e Rede Ferroviária Federal.</li>
+              <li>Auditoria externa de demonstrações contábeis de SmithKline Beecham, Fiat Lux, Banco Fonte Cindam e Ipiranga, com contato direto com sócios e diretores.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="contato" aria-labelledby="contato-title">
+      <div class="cta__inner">
+        <p class="eyebrow">05 / Contato</p>
+        <h2 id="contato-title">Vamos conversar sobre o próximo desafio<span>.</span></h2>
+        <p>Disponível para diálogo sobre planejamento, controle interno, auditoria e gestão baseada em evidências.</p>
+        <div class="cta__links">
+          <a class="button button-primary" href="mailto:mariaceciliafaro@gmail.com.br">mariaceciliafaro@gmail.com.br</a>
+          <a class="button button-ghost" href="tel:+5596981428111">(96) 98142-8111</a>
+        </div>
       </div>
     </section>
   </main>
-  <footer><a class="brand" href="#inicio">mcf<span>.</span></a><p>Maria Cecilia Soares da Costa Faro<br><span>Conteúdo baseado no currículo de 2025.</span></p><a href="#inicio" class="back-top">Voltar ao topo ↑</a></footer>
+
+  <footer class="lp-footer">
+    <a class="brand" href="#inicio">mcf<span>.</span></a>
+    <p>Maria Cecilia Soares da Costa Faro<br><span>Conteúdo baseado no currículo de 2025.</span></p>
+    <a href="#inicio" class="back-top">Voltar ao topo ↑</a>
+  </footer>
 </body>
 </html>
